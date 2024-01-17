@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wedding Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <style>
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(-45deg, #EE9CA7, #FFDDE1,#DDD6F3);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+ .font{
+    font-family:serif; 
+  }
+  .color{
+    font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue" ;
+    
+  }
+  .shopname{
+    color:rgb(188, 25, 58);
+    font-size: 1cm;
+    text-align: center;
+    font-style: italic;
+    font-weight: 200 ;
+    font-family: 'Dancing Script';
+  }
+ 
+ 
+ .logo-img {
+  transition: .5s ease;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+ }
+
+:root {
+  --bg-color:#c33764;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+      margin-bottom: 20px;
+      
+      font-family: 'Abril Fatface', serif;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+
+
+
+
+ /* Define the grid container */
+ .image-gallery {
+      display: grid;
+      grid-gap: 16px; /* Adjust the gap between items as needed */
+      padding: 0px 0px 50px 0px;
+      margin-left: 100px;
+      margin-right: 100px;
+      height: auto;
+    }
+  
+    /* Style for each grid item */
+    .image-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      
+    }
+  
+    /* Style for the grid item image */
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+      border-radius: 8px; /* Match the container's border-radius for a rounded appearance */
+    }
+  
+    /* Make the first image span two rows */
+    .image-container:first-child {
+      grid-row: span 2;
+    }
+
+    /* Responsive styles */
+    @media screen and (min-width: 1200px) {
+      /* Large screens (TV, desktop, laptop) */
+      .image-gallery {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for large screens */
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      /* Medium screens (tablet) */
+      .image-gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      /* Small screens (mobile) */
+      .image-gallery {
+        grid-template-columns: 1fr; /* One column for smaller screens */
+     
+      }
+    }
+    .mt-4 {
+  display: flex;
+  justify-content: center;
+}
+/*pricing*/.// Variables
+$red: #dc2430;
+$purple: #7b4397;
+
+// Card
+.pr{
+  display:flex;
+}
+h1 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+.pricing-card {
+    width: 500px;
+    font-family: 'Open Sans';
+    display: flex;
+    margin: 75px auto;
+    box-shadow: 15px 30px 30px 0 rgba(220, 36, 48, 0.15);
+
+}
+
+.card-left {
+    text-align: center;
+    background: linear-gradient(65deg, #7b4397 , #dc2430);
+    color: #fff;
+    width: 30%;
+    padding: 85px 20px;
+    border-radius: 6px 0 0 6px;
+}
+
+.card-left h1 {
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    font-size: 24px;
+}
+
+.card-left p {
+    font-size: 60px;
+}
+
+.dollar {
+    font-size: 24px;
+    position: relative;
+    top: -26px;
+}
+
+.card-right {
+    text-align: left;
+    background: #fff;
+    width: 70%;
+    color: $red;
+    border-radius: 0 6px 6px 0;
+    padding: 40px 40px;
+}
+
+.card-right h1 {
+    margin-bottom: 15px;
+    color: #292e31;
+    opacity: 0.9;
+}
+
+.card-right ul {
+    margin-bottom: 40px;
+}
+
+.card-right li {
+    padding-bottom: 6px;
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    background: $red;
+    padding: 20px 80px;
+    border-radius: 100px;
+    transition: all 500ms ease;
+}
+
+.button:hover {
+    background: $purple;
+}
+    
+   </style>
+</head>
+<body>
+<!--navbar-->
+
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color:  #c33764;">
+  <div class="container-fluid">
+   <a href="./index.html"> <img style="border-radius: 5px;" src="./images/surat.PNG"/></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav me-auto mb-2 mb-md-0">
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./sub-page.html">Farshi sharara
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./sub-page.html">Barbie gown
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./sub-page.html">Handwork suits
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./sub-page.html">Nairacut
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./sub-page.html">Gharara
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" id="navhover" aria-current="page" href="./sub-page.html">Wedding lehenga
+          </a>
+        </li>
+      </ul>
+
+      <div class="social-container">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav">
+            <li class="nav-item"><a href="#" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Facebook"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg> </a></li>
+            <li class="nav-item"><a href="#" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Instagram"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a></li>
+            <li class="nav-item"><a href="#" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Location"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg> </a></li>
+              <a href="#"  id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Linkedin"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></li>
+            <li class="nav-item"><a href="#" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On YouTube"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a></li>
+            <li class="nav-item"><a href="#" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Linkedin"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a></li>
+            
+        </ul>
+       <!--  <div class="dropdown">
+            <a class="link-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div> -->
+
+        
+    </div>
+  </div>
+
+      <form class="d-flex" role="search">
+        <form class="d-flex" role="search">
+
+
+          <select id="id_name" class="form-control srch_frm auto-complete-search-desk" name="s" autocomplete="off" placeholder="Search Specialties" oninput="showSelected()" style="margin-right: 5px;">
+            <option value="" disabled selected>Search For Brands</option>
+            <option value="genmedicine">Farshi sharara
+            </option>
+            <option value="gensurgery">Barbie gown
+            </option>
+            <option value="pediatrics">Handwork suits
+            </option>
+            <option value="obg">Nairacut
+            </option>
+            <option value="orthopaedics">Gharara
+            </option>
+            <option value="majorICU">
+              Wedding lehenga</option>
+        </select>
+        
+        <button style="background-color:#fafcff; color:#c33764 ;" class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+ <!---carosul-->
+ <div class="carousel-img">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="animate-charcter">Surat Khazana</h3>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item active px-5">
+        <img src="https://aquila-style.com/wp-content/uploads/2019/12/Preparing-the-Muslim-Bride-1024x683.jpg" class="d-block w-100">
+      </div>
+      </div>
+      <!--product-->
+      
+        <main>
+
+          <section class="py-5 text-center">
+            <div class="row py-lg-5 bg">
+              <div class="col-lg-6 col-md-8 mx-auto" >
+                <h1 class="fw-light shopname">OUR WEDDING COLLECTION </h1>
+                
+              </div>
+            </div>
+          </section>
+          
+<div class="image-gallery">
+  <div class="image-container">
+    <img src="https://shaadiwish.com/blog/wp-content/uploads/2019/08/1.-zehrajagani.jpg" width="100%"/>
+  </div>
+  <div class="image-container">
+    <img src="https://i.pinimg.com/originals/f0/96/73/f0967339772643e0231247c90259291e.jpg" width="100%"/>
+  </div>
+  <div class="image-container">
+    <img src="https://getethnic.com/wp-content/uploads/2020/07/Pakistanibridaloutfit2020online_1800x1800.jpg" width="100%"/>
+  </div>
+  <div class="image-container">
+    <img src="https://manyavar.scene7.com/is/image/manyavar/GA7738-411-PISTA_0095_29-06-2023-16-31:650x900" width="100%"/>
+  </div>
+  <div class="image-container">
+    <img src="https://i.pinimg.com/originals/22/65/dc/2265dc7ed2fa6ba6db297413c704bfec.jpg" width="100%"/>
+  </div>
+</div>
+<!--pricing plan-->
+
+
+  <div class="container col-xl-10 col-xxl-8 py-3">
+    <div class="row align-items-center g-lg-5 py-3">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
+        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3" style="background-color: #c33764; color:white;">
+            <h4 class="my-0 fw-normal" style="text-align:center;" >Dress prize</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title" >₹<small class="text-body-secondary fw-light">/price</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>30 users included</li>
+              <li>15 GB of storage</li>
+              <li>Phone and email support</li>
+              <li>Help center access</li>
+            </ul>
+            <button  style="background-color: #c33764; color:white;" type="button" class="w-100 btn btn-lg">Contact us</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+<!--footer-->
+
+
+  <!-- Remove the container if you want to extend the Footer to full width. -->
+ <!--<div class="container my-5">-->
+  
+  <footer class="text-white text-center text-lg-start" style="background-color: #c33764;">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row mt-4">
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0"><img src="./images/surat.PNG"/>
+          <h5 class="text-uppercase mb-4"></h5>
+          
+
+          <p class="color">
+            At Boutique shop we don't just follow trends; we set them. Our carefully curated collection is a testament to the creativity and dedication of our team. Each piece tells a story, celebrating the beauty of craftsmanship and the thrill of finding that perfect outfit.
+          </p>
+
+         
+
+          <div class="mt-4">
+            <!-- Facebook -->
+            <a href="#" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Facebook"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg> </a>
+            <a href="https://www.instagram.com/accounts/login/" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Instagram"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            
+            <a href="#" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Location"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"></path></svg> </a>
+            <a href="#"  id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On Linkedin"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"/></svg></a>
+
+            <a href="#" id="navhover" rel="nofollow" target="_blank" class="nav-link link-dark px-2" title="Follow Us On YouTube"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg></a>
+
+            
+          </div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0"  >
+          
+
+          <div class="form-outline  mb-4">
+            
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 48.8px;"></div><div class="form-notch-trailing"></div></div></div>
+
+          <ul class="fa-ul" style="margin-left: 1.65em  ">
+            <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg"  id="navhover" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
+              <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
+            </svg>
+              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2" >New City New Colony</span>
+            </li>
+            <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" id="navhover" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+              <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+            </svg>
+              <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">suratkhazana.com</span>
+            </li>
+            <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" id="navhover" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+              <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+91 1234567890</span>
+            </li>
+            <li class="mb-3"><svg xmlns="http://www.w3.org/2000/svg" id="navhover" width="16" height="16" fill="currentColor" class="bi bi-floppy" viewBox="0 0 16 16">
+              <path d="M11 2H9v3h2V2Z"/>
+              <path d="M1.5 0h11.586a1.5 1.5 0 0 1 1.06.44l1.415 1.414A1.5 1.5 0 0 1 16 2.914V14.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13A1.5 1.5 0 0 1 1.5 0ZM1 1.5v13a.5.5 0 0 0 .5.5H2v-4.5A1.5 1.5 0 0 1 3.5 9h9a1.5 1.5 0 0 1 1.5 1.5V15h.5a.5.5 0 0 0 .5-.5V2.914a.5.5 0 0 0-.146-.353l-1.415-1.415A.5.5 0 0 0 13.086 1H13v4.5A1.5 1.5 0 0 1 11.5 7h-7A1.5 1.5 0 0 1 3 5.5V1H1.5a.5.5 0 0 0-.5.5Zm3 4a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V1H4v4.5ZM3 15h10v-4.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5V15Z"/>
+            </svg>
+              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+91 987654321</span>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <br />
+          <div class="col">
+            <h5>About Surat Khazana</h5>
+            <ul class="list-unstyled">
+               <li class="nav-item">
+            <a class="nav-link" href="./time&contact.html">Our Timings</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html#testimonial">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./time&contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about-us.html">About Us</a>
+          </li>
+            </ul>
+              
+        </div>
+
+
+
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2); color: #f290af;">
+      © 2023 Copyright. Surat Khazana. All Rights Reserved.
+      <a style="color:#f290af ;"href="#" >suratkhazana.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  
+
+<!-- End of .container -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
